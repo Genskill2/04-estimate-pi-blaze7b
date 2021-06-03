@@ -24,11 +24,12 @@ int main(void) {
   }
 }
 float wallis_pi(int x) {
-    for (int j=0; j<=x; j++) {
-      int n=pow(x,2)
-      int p=4n
-      int q=4n-1
-      float r=p/q
-      float s=r
-      r=s+r}
-  return r
+    int n,p,q;
+    float r=1;
+    for(int j=1;j<=x;j++) {
+        n =pow(j,2);
+        p =4*n;
+        q =p-1;
+        r =r*p/q;}
+  return 2*r;
+} 
