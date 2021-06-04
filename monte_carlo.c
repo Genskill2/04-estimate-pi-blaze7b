@@ -38,6 +38,23 @@ int main(void) {
     }
   }
 }
-
+float mc_pi(int x){
+    float incircle=0;
+    float total=0;
+    float p,q,n,m,d,t;
+    for(int i=0;i<x;i++){
+         p =frandom();
+         q =frandom();
+         p =2*p-1;
+         q =2*q-1;
+         n =pow(p,2);
+         m =pow(q,2);
+         d =sqrt(n+m);
+         if(d<=1){
+             incircle+=1;}
+        total+=1;}
+    t =4*incircle/total;
+    return t;
+}
 
 
